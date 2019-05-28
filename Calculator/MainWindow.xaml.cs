@@ -16,13 +16,43 @@ using System.Windows.Shapes;
 namespace Calculator
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Главное окно 
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Инициализация копонентов
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        //Выход из прогаммы
+        private void ExitInProgram(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void EditebleContent(object sender, TextChangedEventArgs e)
+        {
+            switch (((TextBox)sender).Text.ToArray()[((TextBox)sender).Text.Length-1])
+            {
+                case '+':
+                case '-':
+                case '*':
+                case '/':
+                case '(':
+                    ((TextBox)sender).Text += "\n";
+
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
+        private void EnterButton(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

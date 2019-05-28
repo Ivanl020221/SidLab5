@@ -5,17 +5,81 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="Калькурятор" Height="750" Width="500">
+        Title="Калькурятор" MinHeight="750" Height="750" Width="500" MinWidth="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.1*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid>
-            <Grid.ColumnDefinitions>
+        <Grid Background="#FFFF7400">
+            <Grid.ColumnDefinitions >
                 <ColumnDefinition/>
                 <ColumnDefinition Width="0.3*"/>
             </Grid.ColumnDefinitions>
+            <Label>Калькулятор 3000</Label>
+            <Button Grid.Column="1" Opacity="0.7" Click="ExitInProgram">Exit</Button>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ScrollViewer>
+                <TextBox x:Name="Content" TextWrapping="WrapWithOverflow" TextChanged="EditebleContent"></TextBox>
+            </ScrollViewer>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Style="{StaticResource KeyBoard}">2ND</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="0">RAD</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="0">SIN</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="0">COS</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="0">TAN</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="0" Grid.Row="1">X^Y</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="1">LG</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="1">IN</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="1">(</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="1">)</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="0" Grid.Row="2">#X</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="2">AC</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="2">BACK</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="2">%</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="2">/</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="0" Grid.Row="3">X!</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="3">7</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="3">8</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="3">9</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="3">X</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="0" Grid.Row="4">1/X</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="4">4</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="4">5</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="4">6</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="4">-</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="0" Grid.Row="5">П</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="5">1</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="5">2</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="5">3</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="5">+</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="0" Grid.Row="6" IsEnabled="False"></Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="6">E</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="6" Click="Ent0">0</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="6">.</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="6" Background="Orange" FontSize="30">=</Button>
+            </Grid>
         </Grid>
     </Grid>
 </Window>
