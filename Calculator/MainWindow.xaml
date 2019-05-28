@@ -57,27 +57,27 @@
                 <Button Style="{StaticResource KeyBoard}" Grid.Column="0" Grid.Row="2">#X</Button>
                 <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="2">AC</Button>
                 <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="2">BACK</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="2">%</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="2">/</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="2" Click="EnterButton">%</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="2" Click="EnterButton">/</Button>
                 <Button Style="{StaticResource KeyBoard}" Grid.Column="0" Grid.Row="3">X!</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="3">7</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="3">8</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="3">9</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="3">X</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="3" Click="EnterButton">7</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="3" Click="EnterButton">8</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="3" Click="EnterButton">9</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="3" Click="EnterButton">X</Button>
                 <Button Style="{StaticResource KeyBoard}" Grid.Column="0" Grid.Row="4">1/X</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="4">4</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="4">5</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="4">6</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="4">-</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="4" Click="EnterButton">4</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="4" Click="EnterButton">5</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="4" Click="EnterButton">6</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="4" Click="EnterButton">-</Button>
                 <Button Style="{StaticResource KeyBoard}" Grid.Column="0" Grid.Row="5">П</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="5">1</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="5">2</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="5">3</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="5">+</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="5" Click="EnterButton">1</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="5" Click="EnterButton">2</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="5" Click="EnterButton">3</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="5" Click="EnterButton">+</Button>
                 <Button Style="{StaticResource KeyBoard}" Grid.Column="0" Grid.Row="6" IsEnabled="False"></Button>
                 <Button Style="{StaticResource KeyBoard}" Grid.Column="1" Grid.Row="6">E</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="6" Click="Ent0">0</Button>
-                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="6">.</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="2" Grid.Row="6" Click="EnterButton">0</Button>
+                <Button Style="{StaticResource KeyBoard}" Grid.Column="3" Grid.Row="6" Click="EnterButton">.</Button>
                 <Button Style="{StaticResource KeyBoard}" Grid.Column="4" Grid.Row="6" Background="Orange" FontSize="30">=</Button>
             </Grid>
         </Grid>
